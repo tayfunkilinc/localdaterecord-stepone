@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".recordPage"
+    android:id="@+id/mainRelativeLayout">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/customer_Image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/circularframe"
+        android:scaleType="centerCrop"
+        android:src="@drawable/customerimage" />
+
+    <EditText
+        android:id="@+id/name_Surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_Image"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/circularframe"
+        android:hint="Ad Soyad"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/commercial_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_Surname"
+        android:layout_margin="5dp"
+        android:background="@drawable/circularframe"
+        android:hint="Ticari Ünvan"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/customer_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commercial_Name"
+        android:layout_margin="5dp"
+        android:background="@drawable/circularframe"
+        android:hint="Telefon"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/mail_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_Phone"
+        android:layout_margin="5dp"
+        android:background="@drawable/circularframe"
+        android:hint="Mail Adresi"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/customer_Birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail_Address"
+        android:layout_margin="5dp"
+        android:background="@drawable/circularframe"
+        android:hint="Doğum Tarihi"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/customer_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_Birthday"
+        android:layout_margin="5dp"
+        android:background="@drawable/circularframe"
+        android:hint="Açık Adres"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/work_Explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_Address"
+        android:layout_margin="5dp"
+        android:background="@drawable/circularframe"
+        android:gravity="start"
+        android:hint="Kısa Açıklama"
+        android:inputType="text"
+        android:maxLines="2"
+        android:minHeight="80dp"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/new_Record_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/work_Explanation"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/new_record_add" />
+
+
+
+</RelativeLayout>
+
+</ScrollView>
